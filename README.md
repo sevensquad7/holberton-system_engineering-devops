@@ -1,16 +1,7 @@
-# Git
+ # Shell
 
-These are my first steps around git as a Holberton student.
+These are my first steps around shell as a Holberton student.
 
-## Commands used
-
-```
-git add <project name>
-git clone /path/to/repository 
-git add <temp.txt> 
-git commit –m “descriptive message”
-git push  origin <branch>
-```
 
 ## Expectations
 
