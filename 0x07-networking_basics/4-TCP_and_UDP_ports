@@ -2,4 +2,5 @@
 # Write a Bash script that displays listening ports:
 # That only shows listening sockets
 
-sudo netstat -l
+sudo netstat
+
