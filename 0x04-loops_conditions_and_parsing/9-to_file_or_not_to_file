@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+message=$(file school | cut -d' ' -f 2)
+
+if [[ $message == "cannot" ]]
+then
+    echo "school file does not exist"
+else
+    echo "school file exists"
+    if [[ $message == "empty" ]]
+    then
+	echo "school file is empty"
+    else
+	echo "school file is not empty"
+    fi
+    if [[ $message != "directory" ]]
+    then
+	echo "school is a regular file"
+    fi
+fi
