@@ -25,8 +25,4 @@ Mandatory:
 ***
 *Holberton School Students*
 
-Diana Carhuamanta - [GitHub](https://github.com/CarolinaDCode) | [LinkedIn](https://www.linkedin.com/in/diana-carhuamanta-824742165/)
-
-Geraldine Meneses - [GitHub](https://github.com/nitaly31) | [LinkedIn](https://www.linkedin.com/in/geraldine-meneses/)
-
 Edgar Flores - [GitHub](https://github.com/zye7ert) | [LinkedIn](https://www.linkedin.com/in/edgar-flores-apaza-1a091b140/)
