@@ -9,7 +9,7 @@ sudo apt-get -y install nginx
 sudo chown -R ubuntu /var/www
 ## Change file default --> index.html to nginx.
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
-## Create file error --> error_404.html.
+## Create file error --> error_404.html to nginx.
 echo "Ceci n'est pas une page" > /var/www/html/error_404.html
 ## Service nginx - start.
 sudo service nginx start
