@@ -3,8 +3,6 @@
 #-----------------------------
 # Run sudo update.
 sudo apt-get -y update
-# Run sudo upgrade.
-sudo apt-get -y upgrade
 # Install nginx.
 sudo apt-get -y install nginx
 # Change User /var/www
