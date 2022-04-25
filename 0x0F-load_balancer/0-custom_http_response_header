@@ -17,5 +17,7 @@ sudo service nginx start
 sudo sed -i "s/server_name _;/server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com\/watch?v=NdYWuo9OFAw permanent;/" /etc/nginx/sites-available/default
 ## Redirecting to another page (The page must return an HTTP 404 error code)
 sudo sed -i "s/^server\s{/server {\n\terror_page 404 \/error_404.html;/1" /etc/nginx/sites-available/default
+## Change name server
+sudo sed -i "s/^server\s{/server {\n\tadd_header X-Served-By $HOSTNAME;/1" /etc/nginx/sites-available/default
 ## Service nginx - restart.
 sudo service nginx restart
