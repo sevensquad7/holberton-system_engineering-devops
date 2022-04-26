@@ -5,7 +5,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:vbernat/haproxy-2.4 -y
 ##  Install Haproxy
-sudo apt install haproxy=2.4.\*
+sudo apt install haproxy
 ## change property - ubuntu
 sudo chown -R ubuntu /var/www
 ## Active modo execute in haproxy.cfg
