@@ -2,7 +2,7 @@
 ## Linux update and upgrade
 sudo apt update && sudo apt upgrade -y
 ## need to enable a dedicated PPA with the following command
-sudo apt-get install software-properties-common
+sudo apt-get install -y --no-install-recommends software-properties-common
 sudo add-apt-repository ppa:vbernat/haproxy-2.4 -y
 ##  Install Haproxy
 sudo apt install haproxy
