@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-## Linux update && upgrade
+## Linux update and upgrade
 sudo apt update && sudo apt upgrade -y
 ## need to enable a dedicated PPA with the following command
 sudo apt-get install software-properties-common
