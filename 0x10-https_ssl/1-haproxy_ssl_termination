@@ -40,7 +40,7 @@ frontend Frontend
         default_backend Backend
 
 # Configure Frontend listen all *:443 and solve with Backend
-fronted Frontend_secure
+frontend Frontend_secure
         bind *:443 ssl crt /etc/letsencrypt/live/www.seventeam.tech/load-balancer.pem
         http-request set-header X-Forwarded-Proto https
         default_backend Backend
@@ -48,6 +48,6 @@ fronted Frontend_secure
 # Configure the list the all server
 backend Backend
         balance roundrobin
-        redirect scheme https if !{ ssl_fc }
+        redirect scheme Frontend_secure if !{ ssl_fc }
         server 3377-web-01 34.74.254.2:80 check
         server 3377-web-02 52.207.225.1:80 check
