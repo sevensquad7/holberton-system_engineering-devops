@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Changes owner & group permision nginx
+chmod 744 /etc/nginx/nginx.conf
+# Changes listening all trafic of port 80 to 8080
+sed -i 's/80/8080/g' /etc/nginx/sites-available/default
+# Restart service nginx
+sudo -u nginx service nginx restart
